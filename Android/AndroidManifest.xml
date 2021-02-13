@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- specify the lowercase namespace of the project
+     as the package name in the manifest element -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spaceflint.unjum">
+
+    <!-- API 18, GLES 3.0 -->
+    <!-- note that if testing in the Android emulator, you may need to add
+         the following line in your ~/.android/advancedFeatures.ini file:
+                GLESDynamicVersion=on
+    !-->
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="29" />
+    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+
+    <!-- modify android:label to set the application name.
+         this name appears in the Settings / Apps listing -->
+
+    <application android:label="Un&#x1F643;jum"
+                 android:icon="@drawable/icon"
+                 android:isGame="true"
+                 android:resizeableActivity="true"
+                 android:supportsPictureInPicture="true"
+                 >
+
+        <!-- set android:screenOrientation if you need to lock orientation:
+          https://developer.android.com/guide/topics/manifest/activity-element#screen -->
+
+        <!-- modify android:label to set the activity name.
+             this is the name that appears below the app icon. -->
+
+        <activity android:name="microsoft.xna.framework.Activity"
+                  android:label="Un&#x1F643;jum"
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+                  android:immersive="true"
+                  android:launchMode="singleTask"
+                  android:maxAspectRatio="9"
+                  android:screenOrientation="portrait"
+                  >
+
+          <!-- the name of the main entrypoint class.  if starts with a dot,
+               then it is appended to the namespace specifies in the package
+               attribute.  the default is '.Program' -->
+            <meta-data android:name="BNA.main.class" android:value=".Main"/>
+
+          <!-- the log identifier for log messages printed via android.util.Log
+               by the app.  the default is 'BNA_Game' -->
+            <meta-data android:name="BNA.log.tag" android:value="unjum"/>
+
+          <!-- specifies whether to call glGetError() after every GL call.
+               non-zero value enables error checks, zero skips error checks.
+               this has a negative impact on performance, and is not recommended
+               in production builds.  the default is '0' -->
+            <meta-data android:name="BNA.check.gl.errors" android:value="0"/>
+
+          <!-- specifies whether to disable screen timeout, if set to a non-zero
+               value.  the default is '0' -->
+            <meta-data android:name="BNA.keep.screen.on" android:value="0"/>
+
+          <!-- specifies whether to enable full screen immersive mode, if set
+               to a non-zero value.  the default is '0' -->
+            <meta-data android:name="BNA.immersive.mode" android:value="1"/>
+
+          <!-- specifies the key to signal, for one frame, when the back button
+               is pressed.  if omitted or specified as zero, default handling of
+               the back button occurs, which typically stops the activity.
+               Escape = Microsoft.Xna.Framework.Input.Keys.Escape = 27.
+               Back = Microsoft.Xna.Framework.Input.Keys.Back = 8. -->
+            <meta-data android:name="BNA.back.key" android:value="27"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <meta-data android:name="android.max_aspect" android:value="9" />
+
+    </application>
+
+    <supports-screens android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"
+                      android:anyDensity="true" />
+
+</manifest>

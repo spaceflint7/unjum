@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+	<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputPath>.obj/build</OutputPath>
+	<IntermediateOutputPath>.obj/intermediate</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <Reference Include="C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.dll" />
+	  <Reference Include="C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Game.dll" />
+	  <Reference Include="C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Graphics.dll" />
+	  <Reference Include="C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Storage.dll" />
+	  <Reference Include="C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Windows.Forms.dll" />
+	  <Reference Include="C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Drawing.Common.dll" />
+	  <Reference Include="C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Security.Permissions.dll" />
+	  <Reference Include="C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\5.0.0\System.Configuration.ConfigurationManager.dll" />
+	  <Compile Include="Utils.fs" />
+	  <Compile Include="Xna.fs" />
+	  <Compile Include="Persist.fs" />
+	  <Compile Include="Menu.fs" />
+	  <Compile Include="Game.fs" />
+	  <Compile Include="Main.fs" />
+  </ItemGroup>
+
+</Project>

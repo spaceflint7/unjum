@@ -1,0 +1,10 @@
+.obj/
+.vs/
+packages/
+/TODO
+_OLD/
+Android/my.key*
+Content/obj/
+Content/ContentBuilder/obj/
+Content/ContentBuilder/ContentBuilder.csproj.Debug.cachefile
+Content/ContentBuilder/ContentBuilder.csproj.Release.cachefile
