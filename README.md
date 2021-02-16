@@ -17,7 +17,8 @@ This game was developed on Windows against XNA, and the resulting binary (i.e., 
 - Fix the paths in the build batch file [``buildapk.bat``](https://github.com/spaceflint7/unjum/blob/master/Android/buildapk.bat) to point to the downloaded binaries, as well as your Android directories.
 
 - Create a keystore in ``Android\my.keystore`` using the Java ``signtool`` program:
-    "%JAVA_HOME%\bin\keytool.exe" -genkey -v -keystore Android\my.keystore -alias MyAlias -keyalg RSA -keysize 2048 -validity 10000
+
+        "%JAVA_HOME%\bin\keytool.exe" -genkey -v -keystore Android\my.keystore -alias MyAlias -keyalg RSA -keysize 2048 -validity 10000
 
 - Write the keystore password into ``Android\my.keypass`` without a terminating newline.
 
@@ -27,6 +28,10 @@ Additional links:
 
 - [Play store link](https://play.google.com/store/apps/details?id=com.spaceflint.unjum&hl=en&gl=US)
 
+- [Bluebonnet GitHub repository(https://github.com/spaceflint7/bluebonnet)
+
 - [Bluebonnet home page](https://www.spaceflint.com/bluebonnet)
+
+- [BNA GitHub repository](https://github.com/spaceflint7/bna)
 
 - [Home page for Unjum](https://www.spaceflint.com/?p=207)
