@@ -4,7 +4,9 @@
      as the package name in the manifest element -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.spaceflint.unjum">
+    package="com.spaceflint.unjum"
+    android:versionCode="2"
+    android:versionName="1.0" >
 
     <!-- API 18, GLES 3.0 -->
     <!-- note that if testing in the Android emulator, you may need to add
