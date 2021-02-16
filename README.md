@@ -28,7 +28,7 @@ Additional links:
 
 - [Play store link](https://play.google.com/store/apps/details?id=com.spaceflint.unjum&hl=en&gl=US)
 
-- [Bluebonnet GitHub repository(https://github.com/spaceflint7/bluebonnet)
+- [Bluebonnet GitHub repository](https://github.com/spaceflint7/bluebonnet)
 
 - [Bluebonnet home page](https://www.spaceflint.com/bluebonnet)
 
